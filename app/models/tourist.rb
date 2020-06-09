@@ -19,14 +19,12 @@ class Tourist
     def self.find_by_name(name)
         self.all.find do |tourist|
             tourist.name == name
-            # binding.pry
         end
     end
 
     def trips
         Trip.all.select do |trip|
             trip.tourist == self
-            # binding.pry
         end
     end
 
@@ -41,7 +39,9 @@ class Tourist
     end
 
     def never_visited
-            binding.pry
+        never_been = Landmark.all # All landmarks
+            never_been # 2: Remove all landmarks "self" has been to
+            # 3: Return array for self
     end
 
     

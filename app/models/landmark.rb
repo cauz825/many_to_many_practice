@@ -17,4 +17,11 @@ class Landmark
         @@all
     end
 
+    def self.find_by_city(city)
+        self.all.find do |city|
+            landmark.city == city
+            binding.pry
+        end
+    end
+
 end
