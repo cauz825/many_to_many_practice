@@ -30,4 +30,20 @@ class Tourist
         end
     end
 
+    def landmarks
+        self.trips.map do |trip|
+            trip.landmark
+        end
+    end
+
+    def visit_landmark(landmark)
+        Trip.new(self, landmark)
+    end
+
+    def never_visited
+            binding.pry
+    end
+
+    
+
 end
