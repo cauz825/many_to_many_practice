@@ -39,11 +39,9 @@ class Tourist
     end
 
     def never_visited
-        never_been = Landmark.all # All landmarks
-            never_been # 2: Remove all landmarks "self" has been to
-            # 3: Return array for self
+        all_landmarks = Landmark.all
+        never_been = all_landmarks - self.landmarks
+        never_been
     end
-
     
-
 end
