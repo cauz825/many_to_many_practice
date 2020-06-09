@@ -19,9 +19,14 @@ christmas = Trip.new(john, cabo_arch)
 # Tourist.find_by_name("John")
 # john.landmarks
 # john.visit_landmark(taj_mahal)
-john.never_visited
+# john.never_visited
 
 # Landmark.find_by_city("Agra")
+# cabo_arch.tourists
+
+wedding.tourist
+summer.landmark
+
 
 binding.pry
 0
